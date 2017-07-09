@@ -11,6 +11,9 @@ import javax.swing.JComboBox;
 public class Anotacion {
 
     /**
+     * Prueba git
+     */
+    /**
      * Declaración de los atributos privados
      */
     private String fecha;
