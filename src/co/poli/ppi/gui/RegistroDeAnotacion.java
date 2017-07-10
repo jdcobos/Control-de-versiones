@@ -37,7 +37,9 @@ public class RegistroDeAnotacion extends javax.swing.JFrame {
         this.limpiarCampos();
         return anotacion;
     }
-
+   
+    
+    
     /**
      * Método para limpiar los campos de registro de la anotación
      */
@@ -52,7 +54,7 @@ public class RegistroDeAnotacion extends javax.swing.JFrame {
 
     }
 
-    /**
+/**
      * Método para validar los campos del registro de anotación
      */
     public boolean ValidarCampos() {
@@ -217,6 +219,11 @@ public class RegistroDeAnotacion extends javax.swing.JFrame {
         });
 
         jButton4.setText("Eliminar");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         txtalistado.setEditable(false);
         txtalistado.setColumns(20);
@@ -340,6 +347,7 @@ public class RegistroDeAnotacion extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
 
+
     }//GEN-LAST:event_jButton2ActionPerformed
 /**Asignar el botón con el método crearanotacion para poder actualizar en la lista*/
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -348,6 +356,10 @@ public class RegistroDeAnotacion extends javax.swing.JFrame {
         txtalistado.setText(listaregistro.listar());
 
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+     
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
