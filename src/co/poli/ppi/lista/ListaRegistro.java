@@ -80,6 +80,31 @@ public class ListaRegistro {
 
         return encontro;
     }
+    
+    /**
+     * Método para buscar un dato en la lista
+     */
+    public Anotacion buscarAnotacion(int codigo) {
+        Anotacion anotacion = null;
+        boolean encontro = false;
+        Nodo aux = inicio;
+        while (aux != null && encontro != true) {
+            if (aux.getRegistro().getCodigo() == codigo) {
+                encontro = true;
+                anotacion.setCodigo(aux.getRegistro().getCodigo());
+                anotacion.setDescargos(aux.getRegistro().getDescargos());
+                anotacion.setDescripcion(aux.getRegistro().getDescripcion());
+                anotacion.setFecha(aux.getRegistro().getFecha());
+                anotacion.setNombreDocente(aux.getRegistro().getNombreEstudiante());
+                anotacion.setTipo(aux.getRegistro().getTipo());
+               
+                break;
+            }
+            aux = aux.getSiguiente();
+        }
+ 
+        return anotacion;
+    }    
 
     /**
      * Método para editar la anotación en la lista
