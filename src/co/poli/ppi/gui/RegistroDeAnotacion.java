@@ -37,9 +37,7 @@ public class RegistroDeAnotacion extends javax.swing.JFrame {
         this.limpiarCampos();
         return anotacion;
     }
-   
-    
-    
+
     /**
      * Método para limpiar los campos de registro de la anotación
      */
@@ -54,7 +52,7 @@ public class RegistroDeAnotacion extends javax.swing.JFrame {
 
     }
 
-/**
+    /**
      * Método para validar los campos del registro de anotación
      */
     public boolean ValidarCampos() {
@@ -335,7 +333,9 @@ public class RegistroDeAnotacion extends javax.swing.JFrame {
     private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField4ActionPerformed
-/**Asignar el botón con el método crearanotacion para poder insertar en la lista*/
+    /**
+     * Asignar el botón con el método crearanotacion para poder insertar en la lista
+     */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         listaregistro.insertarAlinicio(crearAnotacion());
         txtalistado.setText("");
@@ -346,10 +346,12 @@ public class RegistroDeAnotacion extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
-
-
+        Anotacion anotacion = listaregistro.buscarAnotacion(Integer.parseInt(this.txtCodigo.getText()));
+       
     }//GEN-LAST:event_jButton2ActionPerformed
-/**Asignar el botón con el método crearanotacion para poder actualizar en la lista*/
+    /**
+     * Asignar el botón con el método crearanotacion para poder actualizar en la lista
+     */
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         listaregistro.editar(crearAnotacion());
         txtalistado.setText("");
@@ -358,7 +360,7 @@ public class RegistroDeAnotacion extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-     
+
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
